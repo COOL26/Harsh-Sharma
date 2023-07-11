@@ -8,7 +8,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: monospace;
-  background: linear-gradient(#000000, #923cb5);
+  background: linear-gradient(#292929, #923cb5);
   color: white;
 }
 
@@ -89,6 +89,83 @@ header nav ul li {
   border-radius: 10px;
 }
 
+/* card section */
+
+main h2 {
+  margin: 64px 48px 0 48px;
+  font-size: 32px;
+  font-family: "Cabin", sans-serif;
+}
+
+main small {
+  margin: 5px 0 0 48px;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+main .grid-card-container {
+  width: 100%;
+  margin: 0 auto 48px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 64px;
+  grid-template-areas: "card";
+}
+
+main .grid-card-container .card {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  user-select: none;
+  position: relative;
+}
+
+main .grid-card-container .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  mix-blend-mode: multiply;
+}
+
+main .grid-card-container .card .card-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background-color: #1f3d4728;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  transition: 1s;
+}
+
+main .grid-card-container .card .card-body h2 {
+  font-size: 64px;
+  margin-top: 0;
+}
+
+main .card .card-body p {
+  font-size: 18px;
+  width: 100%;
+  padding: 12px;
+  line-height: 25px;
+  margin-top: 22px;
+}
+
+main .grid-card-container .card:hover .card-body {
+  right: 0;
+}
+
 /* media query */
 @media only screen and (min-width: 742px) {
   body {
@@ -138,5 +215,50 @@ header nav ul li {
   }
   .main-block .main-block-text a:hover {
     background: black;
+  }
+  /* card section */
+  main .grid-card-container {
+    width: 80%;
+    margin: 48px auto;
+  }
+
+  main .grid-card-container .card {
+    width: 25%;
+    height: 60%;
+    border-radius: 21px;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid white;
+    position: relative;
+  }
+
+  main .grid-card-container .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    mix-blend-mode: multiply;
+  }
+
+  main .grid-card-container .card .card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background-color: #1f3d4728;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    transition: 1s;
+  }
+
+  main .grid-card-container .card:hover .card-body {
+    right: 0;
   }
 }
