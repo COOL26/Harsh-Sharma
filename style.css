@@ -184,10 +184,19 @@ main .grid-card-container .card:hover .card-body {
 }
 
 /* carosoul */
+.carousel-text q {
+  display: block;
+  font-size: 34px;
+}
+
+.carousel-text p {
+  display: block;
+  font-size: 18px;
+}
+
 .testimonials {
   width: 100%;
 }
-
 .testimonials #testimonials-header {
   text-align: center;
 }
@@ -347,6 +356,18 @@ main .grid-card-container .card:hover .card-body {
   main .grid-card-container .card:hover .card-body {
     right: 0;
   }
+  /* carousel */
+
+  /* .carousel-text q {
+    display: block;
+    font-size: 64px;
+  }
+
+  .carousel-text p {
+    display: block;
+    font-size: 22px;
+  } */
+
   .testimonials {
     width: 100%;
   }
