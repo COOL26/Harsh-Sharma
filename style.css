@@ -109,7 +109,7 @@ main .grid-card-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 64px;
-  grid-template-areas: "card";
+  /* grid-template-areas: "card"; */
 }
 
 main .grid-card-container .card {
@@ -149,9 +149,13 @@ main .grid-card-container .card .card-body {
   transition: 1s;
 }
 
-main .grid-card-container .card .card-body h2 {
+main > div {
+  margin-bottom: 64px;
+}
+
+main h2 {
   font-size: 64px;
-  margin-top: 0;
+  margin-top: 64px;
 }
 
 main .card .card-body p {
@@ -191,6 +195,7 @@ main .grid-card-container .card:hover .card-body {
     font-family: "Cabin", sans-serif;
     margin-bottom: 78px;
     letter-spacing: 5px;
+    text-transform: uppercase;
   }
   .main-block .main-block-text p {
     font-size: 24px;
@@ -218,26 +223,32 @@ main .grid-card-container .card:hover .card-body {
   }
   /* card section */
   main .grid-card-container {
-    width: 80%;
-    margin: 48px auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
   }
 
   main .grid-card-container .card {
-    width: 25%;
-    height: 60%;
-    border-radius: 21px;
+    width: 20%;
+    min-width: 250px;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
     cursor: pointer;
     overflow: hidden;
-    border: 1px solid white;
     position: relative;
   }
 
   main .grid-card-container .card img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     border-radius: 15px;
-    mix-blend-mode: multiply;
+    mix-blend-mode: normal;
+    filter: grayscale(1);
   }
 
   main .grid-card-container .card .card-body {
@@ -256,6 +267,30 @@ main .grid-card-container .card:hover .card-body {
     flex-direction: column;
     padding: 15px;
     transition: 1s;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main > div {
+    margin-bottom: 64px;
+  }
+
+  main h2 {
+    font-size: 64px;
+    margin-top: 64px;
+  }
+
+  main .card .card-body p {
+    font-size: 18px;
+    width: 100%;
+    padding: 12px;
+    line-height: 25px;
+    margin-top: 22px;
   }
 
   main .grid-card-container .card:hover .card-body {
