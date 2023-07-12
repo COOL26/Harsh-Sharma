@@ -109,7 +109,6 @@ main .grid-card-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 64px;
-  /* grid-template-areas: "card"; */
 }
 
 main .grid-card-container .card {
@@ -156,6 +155,7 @@ main > div {
 main h2 {
   font-size: 64px;
   margin-top: 64px;
+  padding-top: 12px;
 }
 
 main .card-body h2 {
@@ -172,6 +172,39 @@ main .card .card-body p {
 
 main .grid-card-container .card:hover .card-body {
   right: 0;
+}
+
+/* testimonials */
+main .testimonials {
+  width: 100%;
+  height: 100vh;
+  background: url(img/darkBg3.gif) no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+main .quotes {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans Georgian", sans-serif;
+  backdrop-filter: blur(5px);
+  padding: 10px;
+}
+
+main .quotes small {
+  font-size: 21px;
+}
+
+/* slider */
+
+main .slider-container {
+  margin-top: 50px;
+  height: 40vh;
 }
 
 /* media query */
@@ -305,5 +338,23 @@ main .grid-card-container .card:hover .card-body {
 
   main .grid-card-container .card:hover .card-body {
     right: 0;
+  }
+  /* testimonials */
+  main .testimonials {
+    width: 100%;
+    height: 100vh;
+    background: url(img/darkBg3.gif) no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 100px;
+  }
+  /* slider */
+  main .slider-container q {
+    margin-top: 100px;
+    width: 70%;
+    font-size: 46px;
+  }
+  main .slider-container small {
+    font-size: 21px;
   }
 }
