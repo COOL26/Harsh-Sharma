@@ -128,7 +128,7 @@ main .grid-card-container .card img {
   height: auto;
   object-fit: cover;
   border-radius: 15px;
-  mix-blend-mode: multiply;
+  filter: grayscale(1);
 }
 
 main .grid-card-container .card .card-body {
