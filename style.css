@@ -113,7 +113,9 @@ main .grid-card-container {
 
 main .grid-card-container .card {
   width: 80%;
+  max-width: 450px;
   height: 100%;
+  min-height: 400px;
   margin: 0 auto;
   border-radius: 5px;
   cursor: pointer;
@@ -124,7 +126,8 @@ main .grid-card-container .card {
 
 main .grid-card-container .card img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  min-height: 450px;
   object-fit: cover;
   border-radius: 15px;
   filter: grayscale(1);
@@ -169,6 +172,7 @@ main small {
 
 main .card-body h2 {
   margin-top: 0;
+  font-size: 44px;
 }
 
 main .card .card-body p {
@@ -278,6 +282,7 @@ main .grid-card-container .card:hover .card-body {
   /* card section */
   main .grid-card-container {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -286,19 +291,22 @@ main .grid-card-container .card:hover .card-body {
   }
 
   main .grid-card-container .card {
-    width: 20%;
+    width: 25%;
     min-width: 250px;
     height: 100%;
+    min-height: 400px;
     margin-left: 0;
     margin-right: 0;
     cursor: pointer;
     overflow: hidden;
     position: relative;
+    min-width: 300px;
   }
 
   main .grid-card-container .card img {
     width: 100%;
     height: 100%;
+    min-height: 450px;
     object-fit: cover;
     border-radius: 15px;
     mix-blend-mode: normal;
@@ -310,17 +318,6 @@ main .grid-card-container .card:hover .card-body {
     height: 100%;
     top: 0;
     right: -100%;
-    position: absolute;
-    background-color: #1f3d4728;
-    backdrop-filter: blur(5px);
-    border-radius: 15px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 15px;
-    transition: 1s;
   }
 
   main {
@@ -344,7 +341,7 @@ main .grid-card-container .card:hover .card-body {
   }
 
   main .card .card-body p {
-    font-size: 16px;
+    font-size: 18px;
     width: 100%;
     padding-left: 2px;
     padding-right: 2px;
@@ -357,17 +354,6 @@ main .grid-card-container .card:hover .card-body {
     right: 0;
   }
   /* carousel */
-
-  /* .carousel-text q {
-    display: block;
-    font-size: 64px;
-  }
-
-  .carousel-text p {
-    display: block;
-    font-size: 22px;
-  } */
-
   .testimonials {
     width: 100%;
   }
