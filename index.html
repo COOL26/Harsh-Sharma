@@ -70,7 +70,7 @@
         class="animate__animated animate__zoomIn animate__delay-1s wow"
       >
         <h2>About Me</h2>
-        <small>Tap on cards</small>
+        <small>if(mobileDevice === true) {Tap on cards}</small>
       </div>
       <section class="grid-card-container">
         <div
@@ -121,7 +121,7 @@
       <section class="testimonials">
         <div id="testimonials-header">
           <h2>Certifications</h2>
-          <small>All of my certificates</small>
+          <small>Tap on the certificate for details</small>
         </div>
         <div
           id="carouselExampleSlidesOnly"
@@ -130,6 +130,7 @@
         >
           <div class="carousel-indicators">
             <button
+              style="background-color: black"
               type="button"
               data-bs-target="#carouselExampleSlidesOnly"
               data-bs-slide-to="0"
@@ -138,28 +139,25 @@
               aria-label="Slide 1"
             ></button>
             <button
+              style="background-color: black"
               type="button"
               data-bs-target="#carouselExampleSlidesOnly"
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
             <button
+              style="background-color: black"
               type="button"
               data-bs-target="#carouselExampleSlidesOnly"
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
             <button
+              style="background-color: black"
               type="button"
               data-bs-target="#carouselExampleSlidesOnly"
               data-bs-slide-to="3"
               aria-label="Slide 4"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleSlidesOnly"
-              data-bs-slide-to="4"
-              aria-label="Slide 5"
             ></button>
           </div>
           <div class="carousel-inner">
@@ -203,16 +201,6 @@
                   alt="..."
               /></a>
             </div>
-            <div class="carousel-item c-item">
-              <a
-                target="_blank"
-                href="https://media.geeksforgeeks.org/certificates/1678885371/cb9e2ad6dbb22fd4b97797f50c9dec41.pdf"
-                ><img
-                  src="img/gfgCert.jpg"
-                  class="d-block w-100 c-img"
-                  alt="..."
-              /></a>
-            </div>
           </div>
           <button
             class="carousel-control-prev"
@@ -220,7 +208,11 @@
             data-bs-target="#carouselExampleSlidesOnly"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span
+              style="background-color: black"
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button
@@ -229,7 +221,11 @@
             data-bs-target="#carouselExampleSlidesOnly"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span
+              style="background-color: black"
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
