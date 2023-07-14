@@ -256,6 +256,7 @@ main .grid-card-container .card:hover .card-body {
       rgba(18, 0, 13, 0.73)
     ),
     url(img/myBlog.png);
+  background-size: cover;
 }
 .projects .project-item-cards .two {
   background: linear-gradient(
@@ -264,6 +265,16 @@ main .grid-card-container .card:hover .card-body {
       rgba(18, 0, 13, 0.73)
     ),
     url(img/myPortfolio.png);
+  background-size: cover;
+}
+.projects .project-item-cards .three {
+  background: linear-gradient(
+      to right,
+      rgba(18, 18, 18, 0.52),
+      rgba(18, 0, 13, 0.73)
+    ),
+    url(img/tiktaktoe.png);
+  background-size: cover;
 }
 
 .projects .project-item-cards .project-content .matter {
@@ -471,6 +482,9 @@ main .grid-card-container .card:hover .card-body {
   .projects .project-item-cards .project-content {
     min-width: 350px;
   }
+  .projects .project-item-cards .project-content .matter-container-2 {
+    text-align: center;
+  }
   .projects .project-image {
     display: block;
   }
@@ -482,6 +496,13 @@ main .grid-card-container .card:hover .card-body {
     );
   }
   .projects .project-item-cards .two {
+    background: linear-gradient(
+      to right,
+      rgba(18, 18, 18, 0.52),
+      rgba(18, 0, 13, 0.73)
+    );
+  }
+  .projects .project-item-cards .three {
     background: linear-gradient(
       to right,
       rgba(18, 18, 18, 0.52),
