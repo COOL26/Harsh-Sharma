@@ -226,6 +226,84 @@ main .grid-card-container .card:hover .card-body {
   object-fit: cover;
 }
 
+/* projects */
+
+#projects-header {
+  text-align: center;
+}
+
+.projects .project-image {
+  display: none;
+}
+
+.projects .project-item-cards .project-content {
+  width: 80%;
+  height: 100%;
+  margin: 44px auto;
+  border: 1px solid white;
+  padding: 5px;
+  font-size: 21px;
+
+  /* background-position: center; */
+  object-fit: cover;
+  text-shadow: rgb(44, 43, 43) 1px 0 10px;
+}
+
+.projects .project-item-cards .one {
+  background: linear-gradient(
+      to right,
+      rgba(18, 18, 18, 0.52),
+      rgba(18, 0, 13, 0.73)
+    ),
+    url(img/myBlog.png);
+}
+.projects .project-item-cards .two {
+  background: linear-gradient(
+      to right,
+      rgba(18, 18, 18, 0.52),
+      rgba(18, 0, 13, 0.73)
+    ),
+    url(img/myPortfolio.png);
+}
+
+.projects .project-item-cards .project-content .matter {
+  width: 100%;
+  backdrop-filter: blur(5px);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects .project-item-cards .project-content .matter .matter-container-1 {
+  margin: 0 auto 22px auto;
+}
+
+.projects .project-item-cards .project-content .matter .matter-container-1 h3 {
+  margin: 0;
+  line-height: 0.8;
+  font-size: 32px;
+}
+
+.projects
+  .project-item-cards
+  .project-content
+  .matter
+  .matter-container-1
+  small {
+  font-size: 16px;
+}
+
+.projects .project-item-cards .project-content .matter .matter-container-2 {
+  width: 85%;
+  margin: 6px auto;
+}
+
+.projects .project-item-cards .project-content .matter .matter-container-2 p {
+  font-size: 19px;
+}
+
 /* media query */
 @media only screen and (min-width: 742px) {
   header nav ul li {
@@ -369,5 +447,45 @@ main .grid-card-container .card:hover .card-body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+  /* projects */
+  main .projects {
+    width: 75%;
+  }
+  .projects .project-item-cards .project-image {
+    width: 50%;
+  }
+
+  .projects .project-item-cards .project-image img {
+    width: 100%;
+    min-width: 450px;
+    height: auto;
+    margin-left: 100px;
+    object-fit: cover;
+  }
+  .projects .project-item-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects .project-item-cards .project-content {
+    min-width: 350px;
+  }
+  .projects .project-image {
+    display: block;
+  }
+  .projects .project-item-cards .one {
+    background: linear-gradient(
+      to right,
+      rgba(18, 18, 18, 0.52),
+      rgba(18, 0, 13, 0.73)
+    );
+  }
+  .projects .project-item-cards .two {
+    background: linear-gradient(
+      to right,
+      rgba(18, 18, 18, 0.52),
+      rgba(18, 0, 13, 0.73)
+    );
   }
 }
