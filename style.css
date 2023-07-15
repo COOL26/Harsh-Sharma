@@ -327,6 +327,33 @@ main .grid-card-container .card:hover .card-body {
   /* max-height: 100px; */
 }
 
+/* footer */
+footer {
+  margin-top: 100px;
+}
+footer .socials {
+  height: 20vh;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #bc4e9c; /* fallback for old browsers */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken, luminosity;
+}
+
+footer .socials .icons {
+  margin: 32px 24px;
+  cursor: pointer;
+}
+
+footer .socials .icons .size {
+  font-size: 32px;
+}
+
 /* media query */
 @media only screen and (min-width: 742px) {
   header nav ul li {
@@ -531,5 +558,9 @@ main .grid-card-container .card:hover .card-body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  /* footer */
+  footer .socials .icons .size {
+    font-size: 42px;
   }
 }
