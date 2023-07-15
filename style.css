@@ -279,7 +279,8 @@ main .grid-card-container .card:hover .card-body {
 
 .projects .project-item-cards .project-content .matter {
   width: 100%;
-  backdrop-filter: blur(5px);
+  height: 100%;
+  backdrop-filter: blur(2px);
   margin: 0;
   display: flex;
   justify-content: center;
