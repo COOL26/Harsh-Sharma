@@ -30,10 +30,13 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 header nav ul li {
   font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .main-block {
