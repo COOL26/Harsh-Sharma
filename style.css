@@ -24,6 +24,7 @@ a {
 
 header nav {
   margin: 32px 0;
+  display: none;
 }
 
 header nav ul {
@@ -360,6 +361,9 @@ footer .socials .icons .size {
 
 /* media query */
 @media only screen and (min-width: 742px) {
+  header nav {
+    display: block;
+  }
   header nav ul li {
     font-size: 24px;
   }
